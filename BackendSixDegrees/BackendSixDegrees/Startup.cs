@@ -32,8 +32,12 @@ namespace BackendSixDegrees
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            //Registra servicios de MediatR y Automapper
             services.AddApplicationServices(Configuration);
+
+            //Registra servicios de base de datos
             services.AddPersistenceServices(Configuration);
+
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {

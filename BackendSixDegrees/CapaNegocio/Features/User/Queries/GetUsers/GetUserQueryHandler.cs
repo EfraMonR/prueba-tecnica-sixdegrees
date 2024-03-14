@@ -27,6 +27,8 @@ namespace CapaNegocio.Features.User.Queries.GetUsers
             try
             {
                 var allUsers = (await _repository.ListAllAsync());
+
+                //Mapeamos la entidad con el response
                 return _mapper.Map<List<ResponseGetUserVm>>(allUsers);
             }
             catch (Exception ex)

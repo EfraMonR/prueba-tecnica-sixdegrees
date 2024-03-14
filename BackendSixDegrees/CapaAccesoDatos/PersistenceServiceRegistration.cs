@@ -15,7 +15,10 @@ namespace CapaAccesoDatos
     {
         public static IServiceCollection AddPersistenceServices(this IServiceCollection services, IConfiguration configuration)
         {
+            //Variable de conexión que verifica el archivo appsettings.json en donde se encuentra la cadena de conexión.
             string configurationBD = configuration.GetConnectionString("DBConnectionPruebaSD");
+
+            //Se conecta con base de datos.
             services.AddDbContext<PruebaSDDbContext>(options =>
                 options.UseSqlServer(configurationBD,
                     builder => builder.EnableRetryOnFailure()));
