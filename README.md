@@ -29,7 +29,7 @@ Para el proyecto FrontendSixDegrees tener instalado lo siguiente:
 3. Modifica configuración segun entorno local e instancia:
 ![cadena-conexion](assets/cadena-conexion.png)
 
-4. Ejecuta el proyecto:
+4. Ejecuta el proyecto para que el api comience su funcionamiento:
 ![ejecucion](assets/ejecucion.png)
 
 5. Se abre de manera automatica el navegador ejecutando swagger:
