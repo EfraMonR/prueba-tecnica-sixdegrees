@@ -29,10 +29,30 @@ Para el proyecto FrontendSixDegrees tener instalado lo siguiente:
 3. Modifica configuración segun entorno local e instancia:
 ![cadena-conexion](assets/cadena-conexion.png)
 
-4. Ejecuta el proyecto
+4. Ejecuta el proyecto:
 ![ejecucion](assets/ejecucion.png)
 
-5. Se abre de manera automatica el navegador ejecutando swagger
-![swagger](swagger.png)
+5. Se abre de manera automatica el navegador ejecutando swagger:
+![swagger](assets/swagger.png)
 
 6. Dejar abierto el navegador.
+
+### Configuración proyecto FrontendSixDegrees
+1. Abre el proyecto con Visual Studio Code.
+
+2. Abrir terminal de VS Code.
+
+3. Ejecutar el comando `npm install` para actualizar dependencias:
+![npm](assets/npminstall.png)
+
+4. Ejecutar el comando `ng serve` para iniciar el proyecto
+![ng serve](assets/ngserve.png)
+
+5. Iniciar el navegador de preferencia y escribir en la url `http://localhost:4200/` :
+![navegador](assets/navegador-angular.png)
+
+6. Clickear el boton Buscar y de esta forma cargaran los datos del api ejecutada desde el proyecto de .net:
+![boton](assets/ejecucion-api.png)
+
+### IMPORTANTE
+Ambos proyectos deben estar en ejecución de manera simultanea para su funcionamiento.
