@@ -9,6 +9,7 @@ import { User } from '../../models/user.model'
 })
 export class TableuserComponent implements OnInit {
 
+  //Se crea variable para almacenar respuesta de api
   users: User[] = [];
 
   constructor(private userService: TableuserService) {
@@ -20,6 +21,7 @@ export class TableuserComponent implements OnInit {
   }
 
   getUsers() {
+    //Se llama función creada en el servicio
     this.userService.getAllUser()
       .subscribe(users => this.users = users);
   }
