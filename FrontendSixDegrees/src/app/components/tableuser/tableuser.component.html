@@ -1,0 +1,21 @@
+<div class="container">
+  <!-- Botón en la parte superior del formulario -->
+  <button (click)="getUsers()" class="boton-buscar">Buscar</button>
+</div>
+<div class="container">
+  <!-- Tabla con encabezados "Id" y "Nombre" -->
+  <table>
+    <thead>
+      <tr>
+        <th><span class="triangulo"></span> Id</th>
+        <th><span class="triangulo"></span> Nombre</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of users; let i = index" [ngClass]="{'fila-gris': i % 2 === 0, 'fila-blanca': i % 2 !== 0}">
+        <td>{{ user.usuID }}</td>
+        <td>{{user.nombre }} {{ user.apellido}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

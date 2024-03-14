@@ -1,0 +1,71 @@
+* {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  margin: 0 auto; /* Esto centra el contenido horizontalmente */
+  max-width: 600px; /* Esto limita el ancho del contenido */
+}
+
+/* Estilo para el botón de búsqueda */
+.boton-buscar {
+  background-color: #f0f0f0; /* Fondo gris claro */
+  color: #000; /* Color de texto negro */
+  padding: 10px 20px; /* Ajusta el relleno del botón */
+  border: none; /* Elimina el borde del botón */
+  border-radius: 5px; /* Agrega bordes redondeados al botón */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  display: inline-block; /* Permite alinear el botón a la izquierda */
+}
+
+/* Estilo para el triángulo hacia abajo */
+.triangulo {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent; /* Lado izquierdo del triángulo transparente */
+  border-right: 5px solid transparent; /* Lado derecho del triángulo transparente */
+  border-top: 5px solid black; /* Lado superior del triángulo, color negro */
+  position: relative;
+  top: 10px;
+  right: 5px;
+}
+
+/* Aplica el triángulo al encabezado de la columna */
+th {
+  position: relative;
+  background-color: #D5D8DC; /* Fondo gris oscuro */
+  line-height: 20px; /* Ajusta la altura de línea para centrar verticalmente el texto */
+  border: 2px solid black;
+}
+
+th::before {
+  content: ''; /* Contenido antes del encabezado */
+  position: absolute; /* Establece posición absoluta para el triángulo */
+  top: calc(50% - 5px); /* Centra verticalmente el triángulo */
+  left: -10px; /* Ajusta la posición horizontal del triángulo */
+}
+
+/* Estilo para la tabla */
+table {
+  width: 100%; /* Ajusta la tabla al 100% del contenedor */
+  border-collapse: collapse;/* Combina los bordes de las celdas */
+  margin-top: 20px; /* Agrega margen superior para separar la tabla del botón */
+  border: 2px solid black;
+}
+
+/* Estilo para las celdas */
+th, td {
+  padding: 8px; /* Añade relleno a las celdas */
+  border: 1px solid black; /* Agrega un borde a las celdas */
+  text-align: left; /* Alinea el texto a la izquierda */
+}
+
+/* Estilo para las filas grises */
+.fila-gris {
+  background-color: #f2f2f2; /* Fondo gris para filas pares */
+}
+
+/* Estilo para las filas blancas */
+.fila-blanca {
+  background-color: #fff; /* Fondo blanco para filas impares */
+}
