@@ -40,18 +40,10 @@ namespace BackendSixDegrees
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "BackendSixDegrees", Version = "v1" });
             });
 
-            //Registrar MediatR
-            //services.AddMediatR(typeof(Startup));
-
-            //Registar automapper
-            //services.AddAutoMapper(typeof(Startup));
-
-            //Registrar repositorio
-            //services.AddScoped(typeof(IAsyncRepository<>), typeof(BaseRepository<>));
-
             //Registrar el handler
             services.AddTransient<IRequestHandler<GetUserQuery, List<ResponseGetUserVm>>, GetUserQueryHandler>();
 
+            //Registrar CORS
             services.AddCors(options =>
             {
                 options.AddPolicy("CorsPolicy",
